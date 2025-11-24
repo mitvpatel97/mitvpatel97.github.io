@@ -4,8 +4,11 @@
 		<title>Coding with Mit Patel</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -16,9 +19,10 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#two">About Me</a></li>
+							<li><a href="#experience">Experience</a></li>
 							<li><a href="#one">Projects</a></li>
-							<li><a href="#four">Skills & Technology</a></li>
+							<li><a href="#four">Skills</a></li>
+							<li><a href="#funfacts">Fun Facts</a></li>
 							<li><a href="#three">Contact</a></li>
 						</ul>
 					</nav>
@@ -29,42 +33,94 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<img src="assets/webpp1.jpg" id="backgroundimage">
+					<section id="intro" class="wrapper hero fullscreen fade-up">
 						<div class="inner">
-							<div id="headerDesc">
-								<div>
+							<div class="hero-grid simple">
+								<div class="hero-copy">
+									<p class="eyebrow">Full-Stack Software Engineer</p>
 									<h1>Mit Patel</h1>
-									<p>Full-Stack Software Engineer </p>
+									<p class="lede">Full-stack software engineer, runner, always curious, interested in capital markets, new tech, and building things.</p>
+									<div class="hero-actions">
+										<a href="assets/MitPatel-Resume-SWE.pdf" class="button primary" target="_blank">Resume</a>
+										<a href="mailto:mitvpatel97@gmail.com" class="button ghost">Email</a>
+										<a href="https://www.linkedin.com/in/mitpatel97" class="button ghost" target="_blank">LinkedIn</a>
+										<a href="https://github.com/mitvpatel97" class="button ghost" target="_blank">GitHub</a>
+									</div>
 								</div>
-								<img id="profilepic" src="assets/edited.jpg" alt="">
+								<div class="profile-badge">
+									<img id="profilepic" src="assets/edited.jpg" alt="Mit Patel headshot">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="experience" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Experience Snapshot</h2>
+							<div class="feature-grid experience-grid">
+								<div class="card">
+									<div class="card-header">
+										<h3>Thrivent Financial</h3>
+										<span class="tag">Feb 2023 – Present · Remote</span>
+									</div>
+									<ul>
+										<li>Work on multiple React/Next.js apps in an Nx monorepo used by 10k+ life insurance and mutual fund users.</li>
+										<li>Build GraphQL services on AWS (Dynamo) and use LaunchDarkly feature flags to ship backward‑compatible, zero‑downtime releases.</li>
+										<li>Integrated DocuSign so customers can sign and submit applications online, and built Kafka + NodeJS notification flows that trigger emails and updates when data changes.</li>
+										<li>Own logging and observability with Datadog and structured logs, which has made debugging faster and production issues easier to reason about.</li>
+									</ul>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<h3>Routable</h3>
+										<span class="tag">Apr 2022 – Jan 2023 · Remote</span>
+									</div>
+									<ul>
+										<li>Worked on Mass Payments and Plaid integrations, helping reduce payment processing time by around 45%.</li>
+										<li>Redesigned parts of the AP automation UI with Tailwind CSS and Next.js to make bulk payables easier to manage.</li>
+										<li>Expanded frontend and backend automation with Cypress (TypeScript), Pytest, and Java, cutting manual regression testing by ~60% and reducing build time by ~15%.</li>
+									</ul>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<h3>Kasisto</h3>
+										<span class="tag">Feb 2021 – Apr 2022 · New York, NY</span>
+									</div>
+									<ul>
+										<li>Built Selenium and Cypress JS test suites for the web app and integrated them into GitLab/Jenkins CI/CD pipelines.</li>
+										<li>Performed REST API testing with Postman and Robot Framework to keep the banking chatbot and backend services stable and accurate.</li>
+									</ul>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<h3>Vitech · Vidyo</h3>
+										<span class="tag">2018 – 2021</span>
+									</div>
+									<ul>
+										<li>At Vitech, contributed React/Next.js features for financial applications and wrote Jest tests as part of an Agile, test‑driven workflow.</li>
+										<li>At Vidyo, helped build Jenkins‑based automation across multiple machines for the VidyoGateway screen‑sharing platform, which significantly reduced manual testing.</li>
+									</ul>
+								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="assets/Resume-MitPatel-SWE.pdf" class="button scrolly resumebutton" target="_blank">Resume</a></li>
+								<li><a href="assets/MitPatel-Resume-SWE.pdf" class="button primary" target="_blank">View Full Resume</a></li>
 							</ul>
 						</div>
 					</section>
 
 					<!-- ABOUT ME -->
-					<section id="two" class="wrapper style3 fade-up">
+					<section id="two" class="wrapper style2 fade-up about">
 						<div class="inner">
 							<h2>About Me</h2>
 							<div class="features">
 								<section class="aboutMe">
 									
-									<p> Born and raised in North Jersey, I'm a Software Engineer specializing in full stack development and quality assurance. I hold a BS in Electrical & Computer Engineering and a BA in Computer Science from Rutgers University, graduating in May 2019.
-Currently, I develop sophisticated financial applications at Thrivent using React.js, HTML, and CSS, and integrate applications with GraphQL and AWS. My work also involves optimizing test run times and creating CI/CD pipelines with GitHub Actions.
-Previously, at Routable, I expanded frontend and backend automation, reducing manual regression testing by 60% using Cypress and Pytest. At Kasisto, Inc., I designed Selenium and Cypress JS tests and conducted comprehensive REST API testing to enhance AI-powered virtual assistants.
-My skills include Python, JavaScript, TypeScript, React, NodeJS, AWS, SQL, Terraform, Kubernetes, and Docker. I have a proven track record in project management and agile methodologies, and I enjoy leading teams and mentoring junior developers.
-Explore my GitHub to see my projects, and feel free to reach out with any questions or opportunities!
-									</p>
+									<p>Born and raised in North Jersey, I’m a full-stack engineer who likes working across the whole stack—from React/Next.js on the frontend to GraphQL/Node and AWS on the backend.</p>
+									<p>Right now I’m at Thrivent building financial applications that real people use every day. Before that I worked at Routable, Kasisto, Vitech, and Vidyo, where I spent a lot of time on testing, automation, and CI/CD. I studied Electrical & Computer Engineering and Computer Science at Rutgers, and I enjoy mentoring, clean code, and quietly shipping useful things.</p>
 									
 								</section>
 								
 							</div>
-							<ul class="actions">
-								<li><a href="elements.html" class="button">Learn more</a></li>
-							</ul>
 						</div>
 					</section>
 					
@@ -76,7 +132,7 @@ Explore my GitHub to see my projects, and feel free to reach out with any questi
 							<div class="content">
 								<div class="inner">
 									<h2>Stockvis</h2>
-									<p>A data visualization project, written using Javascript and D3, for performing financial analysis </p>
+									<p>Data visualization for financial analysis with JavaScript + D3. Focused on making market signals instantly legible through interactive charts.</p>
 									<ul class="actions">
 										<li><a href="https://mitvpatel97.github.io/Stockvis/" class="button" target="_blank">Live Site</a></li>
 									</ul>
@@ -88,7 +144,7 @@ Explore my GitHub to see my projects, and feel free to reach out with any questi
 							<div class="content">
 								<div class="inner">
 									<h2>Tweety Bird</h2>
-									<p>A replica of the iconic Flappy Bird.</p>
+									<p>A faithful Flappy Bird clone with tuned physics and responsive playability.</p>
 									<ul class="actions">
 										<li><a href="https://mitvpatel97.github.io/tweetybird/" class="button" target="_blank">Live Site</a></li>
 									</ul>
@@ -97,63 +153,128 @@ Explore my GitHub to see my projects, and feel free to reach out with any questi
 						</section>
 
 					</section>
-
 					<!-- Two -->
-					<section id="four" class="wrapper style3 fade-up">
-						<img src="assets/secondbackground.jpg" id="secondbackground" >
+					<section id="four" class="wrapper style3 fade-up skills">
 						<div class="inner">
-							<h2>Skills & Technologies</h2>
+							<h2>Skills</h2>
 							<div class="features featuresTechs">
 								<section class="featuresSection">
 									<i class="devicon-react-original colored"></i>
 									<h3>React.js</h3>
 									
 								</section>
-
 								<section class="featuresSection">
-									<i class="devicon-javascript-plain"></i>
-									<h3>JavaScript</h3>
+									<i class="devicon-typescript-plain colored"></i>
+									<h3>TypeScript</h3>
 									
 								</section>
-
 								<section class="featuresSection">
-									<i class="devicon-jquery-plain colored"></i>
-									<h3>jQuery</h3>
+									<i class="devicon-tailwindcss-plain colored"></i>
+									<h3>Tailwind CSS</h3>
 								</section>
-
 								<section class="featuresSection">
-									<!-- <span class="icon solid major fa-lock"></span> -->
-									<i class="devicon-rails-plain colored"></i>
-									<h3>Ruby on Rails</h3>
+									<i class="devicon-redux-original colored"></i>
+									<h3>Redux / React Query</h3>
+								</section>
+								<section class="featuresSection">
+									<i class="devicon-nextjs-original"></i>
+									<h3>Next.js</h3>
+								</section>
+								<section class="featuresSection">
+									<i class="devicon-graphql-plain colored"></i>
+									<h3>GraphQL</h3>
 								
 								</section>
 								<section class="featuresSection">
-									<i class="devicon-ruby-plain colored"></i>
-									<h3>Ruby</h3>
+									<i class="devicon-nodejs-plain colored"></i>
+									<h3>Node.js</h3>
 								</section>
-
-								
 								<section class="featuresSection">
-									<i class="devicon-postgresql-plain colored"></i>
-									<h3>PostgreSQL</h3>
+									<i class="devicon-go-plain colored"></i>
+									<h3>Go</h3>
 								</section>
-								
 								<section class="featuresSection">
-									<i class="devicon-html5-plain colored"></i>
-									<h3>HTML</h3>
+									<i class="devicon-java-plain colored"></i>
+									<h3>Java</h3>
 								</section>
-								
-								<section class="featuresSection">
-									<i class="devicon-css3-plain colored"></i>
-									<h3>CSS</h3>
-								</section>
-								
 								<section class="featuresSection">
 									<i class="devicon-python-plain colored"></i>
 									<h3>Python</h3>
 								</section>
+								<section class="featuresSection">
+									<i class="devicon-postgresql-plain colored"></i>
+									<h3>PostgreSQL</h3>
+								</section>
+								<section class="featuresSection">
+									<i class="devicon-redis-plain colored"></i>
+									<h3>Redis</h3>
+								</section>
+								
+								<section class="featuresSection">
+									<i class="devicon-amazonwebservices-plain colored"></i>
+									<h3>AWS</h3>
+								</section>
+								<section class="featuresSection">
+									<i class="devicon-docker-plain colored"></i>
+									<h3>Docker</h3>
+								</section>
+								<section class="featuresSection">
+									<i class="devicon-kubernetes-plain colored"></i>
+									<h3>Kubernetes</h3>
+								</section>
+								<section class="featuresSection">
+									<i class="devicon-terraform-plain colored"></i>
+									<h3>Terraform</h3>
+								</section>
+								<section class="featuresSection">
+									<i class="devicon-rabbitmq-plain colored"></i>
+									<h3>Kafka / RabbitMQ</h3>
+								</section>
+								<section class="featuresSection">
+									<i class="devicon-cypressio-plain colored"></i>
+									<h3>Cypress</h3>
+								</section>
+								<section class="featuresSection">
+									<i class="devicon-jenkins-plain colored"></i>
+									<h3>Jenkins / GitHub Actions</h3>
+								</section>
+								<section class="featuresSection">
+									<i class="devicon-linux-plain colored"></i>
+									<h3>CI/CD & Observability</h3>
+								</section>
 							</div>
 
+						</div>
+					</section>
+
+					<section id="funfacts" class="wrapper style2 fade-up funfacts">
+						<div class="inner">
+							<h2>Fun Facts</h2>
+							<div class="funfacts-grid">
+								<div class="fact-card tall">
+									<img src="assets/funfacts/DSC00231.ARW.jpg" alt="Mit and his wife at their wedding">
+								</div>
+								<div class="fact-card">
+									<img src="assets/funfacts/IMG_6237.JPG" alt="Trail running and hiking">
+								</div>
+								<div class="fact-card wide">
+									<img src="assets/funfacts/IMG_0115.jpg" alt="Banff National Park landscape">
+								</div>
+								<div class="fact-card">
+										<img src="assets/funfacts/DSC00630.ARW.jpg" alt="Running medals and training">
+								</div>
+								<div class="fact-card tall">
+									<img src="assets/funfacts/Screen Shot 2025-11-23 at 10.26.53 PM.png" alt="Finance research setup">
+								</div>
+							</div>
+							<div class="funfacts-details">
+								<ul>
+									<li>I got married in August 2025 to my beautiful wife. We had a full Indian wedding and it was an incredible, fun few days with friends and family.</li>
+									<li>I love running and hiking. My mile PR from high school is 4:39, and my half marathon PR is 1:28.</li>
+									<li>I’m obsessed with national parks. The favorite place I’ve ever hiked is Banff National Park—absolutely stunning.</li>
+									<li>In my free time I like analyzing public markets, stocks, Bitcoin, and real estate. I’m pretty much a finance junkie.</li>
+								</ul>
+							</div>
 						</div>
 					</section>
 
@@ -165,56 +286,11 @@ Explore my GitHub to see my projects, and feel free to reach out with any questi
 					<section id="three" class="wrapper style1 fade-up contactmain">
 						<div class="inner">
 							<h2>Contact</h2>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<!-- <form action="mailto:kevinktom@example.com" method="post" enctype="text/plain"> -->
-												<!-- <li><a href="" class="button submit">Send Message</a></li> -->
-												<!-- <li><a href="mailto:kevinktom@gmail.com" class="button submit">Send Message </a></li> -->
-												<li> <a href="#" class="button submit">Send Message </a></li>
-												
-											<!-- </form> -->
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-
-										<li>
-											<h3>Email</h3>
-											<a href="#">mitvpatel97@gmail.com</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(760) 855-2640</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-												<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-												<li><a href="https://github.com/mitvpatel97" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-												<li><a href="http://www.linkedin.com/in/mit-patel-869730148" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
+							<div class="contact-actions">
+								<a href="mailto:mitvpatel97@gmail.com" class="button primary">Email</a>
+								<a href="https://www.linkedin.com/in/mitpatel97" class="button ghost" target="_blank">LinkedIn</a>
+								<a href="https://github.com/mitvpatel97" class="button ghost" target="_blank">GitHub</a>
+								<span class="availability">Currently open to senior software roles.</span>
 							</div>
 						</div>
 					</section>
